@@ -1,5 +1,5 @@
 # 锚点
-pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🎉 精选订阅, 🌐 全部节点, 🇭🇰 香港节点,🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🟢 直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🎉 精选订阅, 🌐 全部节点, 🇭🇰 香港节点,🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🧿 其它地区,🟢 直连]}
 best: &best {type: url-test, interval: 300, tolerance: 50, lazy: true, use: [CFWorker,  XrayFree, ripao, CitizenScyu, go4sharing]}
 watch: &watch {type: url-test, interval: 300, tolerance: 50, lazy: true, use: [vxiaov,  ChromegoWarp]}
 # 机场订阅，名称不能重复
@@ -238,7 +238,7 @@ proxy-groups:
   - {name: 📲 Telegram, <<: *pr}
   - {name: 🎥 NETFLIX, <<: *watch}
   - {name: 💶 PayPal, <<: *pr}
-  - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择, 🎉 精选订阅, ♻️ 自动选择, 🇭🇰 香港节点,🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🌐 全部节点]}
+  - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择, 🎉 精选订阅, ♻️ 自动选择, 🇭🇰 香港节点,🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🧿 其它地区, 🌐 全部节点]}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼, <<: *pr}
   - {name: 🇭🇰 香港节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
@@ -247,6 +247,7 @@ proxy-groups:
   - {name: 🇰🇷 韩国, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "韩|🇰🇷|(?i)KR|(?i)KOR|首尔|韩|韓|(?i)Korea"}
   - {name: 🇯🇵 日本节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
   - {name: 🇺🇲 美国节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
+  - {name: 🧿 其它地区,, type: select, include-all: true, tolerance: 20, interval: 300, filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates)).*"}
 rules:
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,ai,🤖 AI
