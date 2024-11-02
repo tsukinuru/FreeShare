@@ -25,6 +25,7 @@ const ruleOptions = {
   youtube: false, // YouTube
   bahamut: true, // 巴哈姆特/动画疯
   netflix: false, // Netflix网飞
+  notion: true, //Notion
   tiktok: false, // 国际版抖音
   disney: false, // 迪士尼
   pixiv: false, // Pixiv
@@ -480,6 +481,18 @@ function main(config) {
       proxies: ["默认节点","全部节点", ...proxyGroupsRegionNames, "直连"],
       url: "https://api.fast.com/netflix/speedtest/v2?https=true",
       icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png",
+    });
+  }
+
+  if (ruleOptions.notion) {
+    rules.push("GEOSITE,notion,notion");
+    config["proxy-groups"].push({
+      ...groupBaseOption,
+      name: "Notion",
+      type: "select",
+      proxies: ["默认节点","全部节点", ...proxyGroupsRegionNames, "直连"],
+      url: "https://www.notion.so/cdn-cgi/image/format=webp,width=1080/front-static/pages/product/super-duper/organize/organize-screen-mobile.png",
+      icon: "https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Notion.png",
     });
   }
 
