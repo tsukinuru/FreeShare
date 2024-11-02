@@ -1,7 +1,7 @@
 # 锚点
 pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🎉 精选订阅, 🌐 全部节点, 🇭🇰 香港节点,🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🧿 其它地区,🟢 直连]}
 best: &best {type: url-test, interval: 300, tolerance: 50, lazy: true, use: [CFWorker,  XrayFree, ripao, CitizenScyu, go4sharing]}
-watch: &watch {type: url-test, interval: 300, tolerance: 50, lazy: true, use: [vxiaov,  ChromegoWarp]}
+watch: &watch {type: url-test, interval: 300, tolerance: 50, lazy: true, use: [vxiaov,  o00o]}
 # 机场订阅，名称不能重复
 proxy-providers:
   CFWorker:
@@ -58,7 +58,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://gh.api.99988866.xyz/https://raw.githubusercontent.com/vxiaov/free_proxies/refs/heads/main/clash/clash.provider.yaml"
+    url: "https://raw.githubusercontent.com/vxiaov/free_proxies/refs/heads/main/clash/clash.provider.yaml"
   ripao:
     type: http
     interval: 1800
@@ -95,7 +95,7 @@ proxy-providers:
       interval: 300
     proxy: 🟢 直连
     url: "https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml"
-  ChromegoWarp:
+  o00o:
     type: http
     interval: 1800
     health-check:
@@ -103,7 +103,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://warp.neobirdfly.eu.org"
+    url: "https://owo.o00o.ooo/ooo"
   qjlxg:
 #  https://raw.githubusercontent.com/qjlxg/aggregator/main/data/clash.yaml
     type: http
@@ -113,7 +113,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://gh.api.99988866.xyz/https://raw.githubusercontent.com/qjlxg/aggregator/main/data/clash.yaml"
+    url: "https://raw.githubusercontent.com/qjlxg/aggregator/main/data/clash.yaml"
     override:
       skip-cert-verify: true
       udp: true
