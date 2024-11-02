@@ -1,7 +1,7 @@
 # 锚点
 pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🎉 精选订阅, 🌐 全部节点, 🇭🇰 香港节点,🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🧿 其它地区,🟢 直连]}
-best: &best {type: url-test, interval: 300, tolerance: 50, lazy: true, use: [CFWorker,  XrayFree, ripao, CitizenScyu, go4sharing]}
-watch: &watch {type: url-test, interval: 300, tolerance: 50, lazy: true, use: [vxiaov,  o00o]}
+best: &best {type: url-test, interval: 300, tolerance: 50, lazy: true, use: [CFWorker, o00o, ripao, CitizenScyu, go4sharing]}
+watch: &watch {type: url-test, interval: 300, tolerance: 50, lazy: true, use: [vxiaov]}
 # 机场订阅，名称不能重复
 proxy-providers:
   CFWorker:
@@ -22,15 +22,6 @@ proxy-providers:
       interval: 300
     proxy: 🟢 直连
     url: "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml"
-  XrayFree:
-    type: http
-    interval: 1800
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 🟢 直连
-    url: "https://www.xrayvip.com/free.yaml"
   AMPN:
     type: http
     interval: 1800
@@ -58,7 +49,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://raw.githubusercontent.com/vxiaov/free_proxies/refs/heads/main/clash/clash.provider.yaml"
+    url: "https://github.moeyy.xyz/https://raw.githubusercontent.com/vxiaov/free_proxies/refs/heads/main/clash/clash.provider.yaml"
   ripao:
     type: http
     interval: 1800
