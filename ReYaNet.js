@@ -485,7 +485,7 @@ function main(config) {
   }
 
   if (ruleOptions.notion) {
-    rules.push("GEOSITE,notion,notion");
+    rules.push("GEOSITE,notion,Notion");
     config["proxy-groups"].push({
       ...groupBaseOption,
       name: "Notion",
