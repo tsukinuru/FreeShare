@@ -213,9 +213,9 @@ proxies:
   
 # 策略组
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png, proxies: [🎉 精选订阅, ☢ 负载均衡-散列, ☢ 负载均衡-轮询, ♻️ 自动选择, 🌐 全部节点, 🇭🇰 香港节点,🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🧿 其它地区, 🟢 直连]}
-  - {name: ♻️ 自动选择, type: url-test, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png, include-all: true, tolerance: 20, interval: 300, lazy: true, filter: "^((?!(直连)).)*$"}
-  - {name: 🎉 精选订阅, <<: *best, filter: "^((?!(直连)).)*$", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Qure.png }
+  - {name: 🚀 节点选择, type: select, icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Proxy.png, proxies: [🎉 精选订阅, ☢ 负载均衡-散列, ☢ 负载均衡-轮询, ♻️ 自动选择, 🌐 全部节点, 🇭🇰 香港节点,🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡, 🇰🇷 韩国, 🇺🇲 美国节点, 🇩🇪 德国节点, 🇬🇧 英国节点, 🧿 其它地区, 🟢 直连]}
+  - {name: ♻️ 自动选择, type: url-test, icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Auto.png, include-all: true, tolerance: 20, interval: 300, lazy: true, filter: "^((?!(直连)).)*$"}
+  - {name: 🎉 精选订阅, <<: *best, filter: "^((?!(直连)).)*$", icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Qure.png }
   - {name: ☢ 负载均衡-散列, type: load-balance, strategy: consistent-hashing, interval:180, <<: *best, filter: "^((?!(直连)).)*$", icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Round_Robin_1.png }
   - {name: ☢ 负载均衡-轮询, type: load-balance, strategy: round-robin, interval:180, <<: *best, filter: "^((?!(直连)).)*$", icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Round_Robin.png }
   - {name: 🌐 全部节点, type: select, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Final.png }
