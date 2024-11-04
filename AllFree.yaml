@@ -21,7 +21,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml"
+    url: "https://cdn.jsdelivr.net/gh/Ruk1ng001/freeSub@main/clash.yaml"
   AMPN:
     type: http
     interval: 1800
@@ -30,7 +30,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml"
+    url: "https://testingcf.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.yml"
   ermaozi:
     type: http
     interval: 1800
@@ -49,7 +49,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://github.moeyy.xyz/https://raw.githubusercontent.com/vxiaov/free_proxies/refs/heads/main/clash/clash.provider.yaml"
+    url: "https://cdn.jsdelivr.net/gh/vxiaov/free_proxies@main/clash/clash.provider.yaml"
   ripao:
     type: http
     interval: 1800
@@ -58,7 +58,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash"
+    url: "https://cdn.jsdelivr.net/gh/ripaojiedian/freenode@main/clash"
   snakem982:
     type: http
     interval: 1800
@@ -104,7 +104,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://raw.githubusercontent.com/qjlxg/aggregator/main/data/clash.yaml"
+    url: "https://cdn.jsdelivr.net/gh/qjlxg/aggregator@main/data/clash.yaml"
     override:
       skip-cert-verify: true
       udp: true
